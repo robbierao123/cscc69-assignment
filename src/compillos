@@ -1,0 +1,12 @@
+#!/bin/bash 
+
+cd "/cmshome/raoxibo/starter-code/src/kern/conf" && ./config ASST1
+
+cd "/cmshome/raoxibo/starter-code/src/kern/compile/ASST1" && bmake depend && bmake && bmake install
+
+cd "/cmshome/raoxibo/starter-code/src" && bmake && bmake install
+
+echo "im done"
+
+
+
